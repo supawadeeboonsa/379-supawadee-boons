@@ -4,7 +4,7 @@ import { test, expect, Page } from '@playwright/test';
 /** ---------- Config ---------- **/
 const APP_URL = process.env.APP_URL || 'http://localhost:9000/#/';
 
-/** ---------- Helper: Wait for server ---------- **/
+/** ----------  Helper: Wait for server  ---------- **/
 const waitForServer = async (url: string, timeout = 20000) => {
   const start = Date.now();
   while (Date.now() - start < timeout) {
