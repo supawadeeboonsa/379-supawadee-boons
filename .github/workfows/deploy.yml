@@ -1,13 +1,13 @@
 name: Deploy Quasar SPA to GitHub Pages
 on:
   push:
-    branches: [ "master" ] # เปลี่ยนเป็น branch ที่คุณใช้
+    branches: [ "master" ]  # เปลี่ยนเป็น branch ที่คุณใช้
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Allow pushing to gh-pages
+      contents: write   # Allow pushing to gh-pages
 
     steps:
       - name: Checkout repository
